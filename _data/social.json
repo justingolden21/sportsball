@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/sportsball/",
+    "icon": "fab fa-facebook-f"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://twitter.com/sportsballgame",
+    "icon": "fab fa-twitter"
+  },
+  {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/channel/sportsball",
+    "icon": "fab fa-youtube"
+  },
+  {
+    "name": "Email",
+    "url": "mailto:contact@example.com/sportsball",
+    "icon": "fas fa-envelope"
+  }
+]

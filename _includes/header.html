@@ -1,0 +1,58 @@
+<nav class="navbar navbar-default navbar-fixed-top ">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <p id="navTitle" class="navbar-text">
+      <img src="{{ site.baseurl }}/assets/images/icon.png" width="36px"> 
+      SportsBall
+    </p>
+    
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a class="page-scroll" tabindex="-1" href="{{ site.baseurl }}/index.html#home"><i class="fas fa-home"></i> HOME</a></li>
+        <li><a class="page-scroll" tabindex="-1" href="{{ site.baseurl }}/index.html#articles"><i class="fas fa-newspaper"></i> ARTICLES</a></li>
+        <li><a class="page-scroll" tabindex="-1" href="{{ site.baseurl }}/index.html#gallery"><i class="fas fa-camera-retro"></i> GALLERY</a></li>
+        <li><a class="page-scroll" tabindex="-1" href="{{ site.baseurl }}/index.html#social"><i class="fas fa-bullhorn"></i> SOCIAL</a></li>
+        <li class="dropdown">
+          <a tabindex="-1" class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fas fa-volleyball-ball"></i> SPORTS <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ site.baseurl }}/football/"><i class="fas fa-football-ball"></i> FOOTBALL</a></li>
+            <li><a href="{{ site.baseurl }}/basketball/"><i class="fas fa-basketball-ball"></i> BASKETBALL</a></li>
+            <li><a href="{{ site.baseurl }}/soccer/"><i class="fas fa-futbol"></i> SOCCER</a></li>
+            <li><a href="{{ site.baseurl }}/volleyball/"><i class="fas fa-volleyball-ball"></i> VOLLEYBALL</a></li>
+            <li><a href="{{ site.baseurl }}/baseball/"><i class="fas fa-baseball-ball"></i> BASEBALL</a></li>
+            <li><a href="{{ site.baseurl }}/gold/"><i class="fas fa-golf-ball"></i> GOLF</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a tabindex="-1" class="dropdown-toggle" data-toggle="dropdown" href="#">MORE <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ site.baseurl }}/tickets/"><i class="fas fa-ticket-alt"></i> TICKETS</a></li>
+            <li><a href="{{ site.baseurl }}/shop/"><i class="fas fa-shopping-basket"></i> SHOP</a></li>
+            <li><a href="{{ site.baseurl }}/shop/"><i class="fas fa-calendar"></i> SCHEDULES</a></li>
+            <li><a href="{{ site.baseurl }}/shop/"><i class="fas fa-users"></i> ROSTERS</a></li>
+
+            <li><a href="{{ site.baseurl }}/about/"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      {% for item in site.data.social %}
+      <li>
+        <a tabindex="-1" title="{{ item.name }}" href="{{ item.url }}">
+          <i class="{{ item.icon }}"></i>
+        </a>
+      </li>
+      {% endfor %}
+      </ul>
+    </div>
+</nav>
+
+
+<div id="home" class="jumbotron text-center">
+<h1><img class="jumbo-logo" src="{{ site.baseurl }}/assets/images/logo.jpg" width="120px">
+  <br><b> Sportsball {{ page.title }} </b></h1>
+</div>

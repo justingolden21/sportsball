@@ -1,0 +1,34 @@
+---
+layout: default-layout
+---
+
+<style>
+  body {
+    background-color: #036;
+	  color: #fff;
+	  text-align: center;
+	  font-size: 150%;
+  }
+  #takeMeHome {
+    padding: 20px;
+  	font-size: 200%;
+  }
+  a:not(#contactSupport), a:not(#contactSupport):hover {
+    color: #fff;
+  }
+</style>
+
+
+<h1>Error 404 </h1><h3>Page not found</h3>
+<br>
+
+<button id="takeMeHome" type="button" onclick="window.open('{{ site.baseurl }}/index.html#home', '_self');" class="btn btn-default"><strong>Take me back </strong><span class="fa fa-home"></span></button>
+
+<br><br><hr>
+<p>Something wrong? Let us know:
+  <br>
+  <button type="button" class="btn btn-default btn-lg">
+  <a id="contactSupport" tabindex="-1" href="mailto:contact@example.com/sportsball">contact@example.com/sportsball</a>
+  <i class="fas fa-envelope"></i>
+  </button>
+</p>
