@@ -1,4 +1,6 @@
-# [Example Sportsball Website](justingolden21.github.io/sports-website)
+# [Example Sportsball Website](justingolden21.github.io/sportsball)
+  
+https://justingolden21.github.io/sportsball
   
 - by Justin Golden
 
