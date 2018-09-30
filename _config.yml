@@ -1,5 +1,5 @@
 title: SportsBall
-baseurl: ""
-url: "justingolden21.github.io/sportsball"
+baseurl: "/sportsball"
+url: "https://justingolden21.github.io/"
 markdown: kramdown
 include: [_data]
