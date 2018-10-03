@@ -1,5 +1,41 @@
 $(document).ready(function() {
   $(window).scroll();
+
+  $(".fa-envelope").hover(
+   function(){ 
+    $(this).addClass("fa-envelope-open"); 
+    $(this).removeClass("fa-envelope"); 
+   },
+   function(){ 
+    $(this).removeClass("fa-envelope-open"); 
+    $(this).addClass("fa-envelope");
+   }
+  );
+
+  $('#menuButton').on('click', function() {
+    if($('#menuIcon').hasClass('fa-bars') ) {
+      $('#menuIcon').addClass('fa-times');
+      $('#menuIcon').removeClass('fa-bars');
+    } else {
+      $('#menuIcon').addClass('fa-bars');
+      $('#menuIcon').removeClass('fa-times');
+    }
+  });
+
+  //TODO: clicking away and closing menu doesn't move arrow back up
+  $('.dropdown').on('click', function() {
+    console.log($(this).find('.fa-caret-down').css('transform') );
+    if($(this).find('.fa-caret-down').css('transform').indexOf('matrix') == -1 ) {
+      $(this).find('.fa-caret-down').css('transform', 'rotate(180deg)');      
+    } else {
+      $(this).find('.fa-caret-down').css('transform', '');
+    }
+
+
+  });  
+
+
+
 })
 
 $(window).scroll(function() {

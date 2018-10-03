@@ -15,6 +15,11 @@
     "icon": "fab fa-youtube"
   },
   {
+    "name": "Instagram",
+    "url": "http://instagram.com/sportsball",
+    "icon": "fab fa-instagram"
+  },
+  {
     "name": "Email",
     "url": "mailto:contact@example.com/sportsball",
     "icon": "fas fa-envelope"
